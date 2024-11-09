@@ -71,3 +71,21 @@ async function sendQuestion() {
         addMessage('Sorry, there was an error processing your question. Please check if the backend server is running (localhost:8000) and try again.');
     }
 }
+
+// Event listener for Enter key
+questionInput.addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') {
+        sendQuestion();
+    }
+});
+
+// Function to handle suggestion clicks
+function askQuestion(question) {
+    questionInput.value = question;
+    sendQuestion();
+}
+
+// Add initial welcome message
+document.addEventListener('DOMContentLoaded', () => {
+    addMessage("👋 नमस्ते! I'm your Women's Rights Assistant. How can I assist you today?");
+});
