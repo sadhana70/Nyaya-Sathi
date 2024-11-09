@@ -1,0 +1,26 @@
+:root {
+    --primary-color: #FF69B4; /* Hot Pink */
+    --secondary-color: #F8BBD0; /* Light Pink */
+    --background-color: #FFF0F5; /* Lavender Blush */
+    --text-color: #333; /* Dark Gray */
+    --bot-message-color: #fff; /* White */
+    --user-message-color: #FFE4E1; /* Misty Rose */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
