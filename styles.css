@@ -25,6 +25,47 @@ body {
     overflow: hidden;
 }
 
+
+/* Updated Auth Button Styles */
+.auth-container {
+    text-align: center;
+    max-width: 80%;
+}
+
+.tagline {
+    font-size: 2.7 rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.auth-button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 20px;
+    background-color: #fb6a9c;
+    color: white;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.2s;
+    margin: 0 10px;
+    align-items: center;
+}
+
+.auth-button:hover {
+    background-color: rgb(243, 50, 156);
+    transform: scale(1.05);
+}
+
+#logoutButton {
+    background-color: 
+    rgb(246, 89, 175);
+}
+
+#logoutButton:hover {
+    background-color: rgb(243, 50, 156);
+}
 .chat-container {
     width: 90%;
     max-width: 600px;
