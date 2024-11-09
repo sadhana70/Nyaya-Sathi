@@ -36,3 +36,38 @@ function showLoading() {
     chatBox.scrollTop = chatBox.scrollHeight;
     return loadingDiv;
 }
+
+// Main function to send questions and handle responses
+async function sendQuestion() {
+    const question = questionInput.value.trim();
+    if (!question) return;
+
+    try {
+        addMessage(question, true); // Show user's message
+        questionInput.value = '';
+
+        const loadingDiv = showLoading(); // Show loading indicator
+
+        // Send request to backend
+        const response = await fetch('http://localhost:8000/chat', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ text: question }),
+        });
+
+        loadingDiv.remove(); // Remove loading indicator
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const data = await response.json();
+        addMessage(data.response); // Add bot's response
+
+    } catch (error) {
+        console.error('Error in sendQuestion:', error);
+        addMessage('Sorry, there was an error processing your question. Please check if the backend server is running (localhost:8000) and try again.');
+    }
+}
