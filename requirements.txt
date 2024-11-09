@@ -2,3 +2,7 @@ google-generativeai
 python-dotenv
 fastapi 
 uvicorn
+authlib
+python-jose[cryptography]
+requests
+python-jwt
