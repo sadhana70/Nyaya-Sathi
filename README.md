@@ -4,20 +4,6 @@
 
 ---
 
-## Table of Contents
-- [Why I Built This](#why-I-built-this)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Demo](#demo)
-- [How Nyaya-Sathi Supports Gender Equality](#how-nyaya-sathi-supports-gender-equality)
-- [Setup Instructions](#setup-instructions)
-- [Testing Instructions](#testing-instructions)
-- [How to Use Nyaya-Sathi](#how-to-use-nyaya-sathi)
-- [Challenges We Faced](#challenges-we-faced)
-- [Future Improvements](#future-improvements)
-
----
-
 ## Why I Built This 💡
 In many parts of the world, women and girls don’t always know their rights or have easy access to information that could protect them. Nyaya-Sathi was built to help change that. With this chatbot, women can ask questions about their rights and get quick answers, making it easier to understand and stand up for themselves.
 
